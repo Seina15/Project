@@ -1,0 +1,12 @@
+services:
+  occdet:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: occdet_demo
+    volumes:
+      - ./:/app 
+      - ./out:/app/out
+      - ./data:/app/data
+    tty: true 
+    stdin_open: true
