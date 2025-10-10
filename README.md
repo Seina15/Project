@@ -32,3 +32,10 @@ docker compose up -d
 #Docker内にはいる
 docker exec -it occdet_demo bash
 ```
+
+## 4.　環境テスト
+ターミナルで以下を入力：
+
+```bash
+python3 yolo_detection.py
+```
